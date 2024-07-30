@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+header {
+  height: 12vh;
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu {
+  display: none;
+}
+.logo {
+  display: flex;
+  height: 12vh;
+  width: 150px;
+  position: absolute;
+  left: 0px;
+  background-image: url(logo.png);
+  background-size: cover;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+.heading a {
+  color: white;
+  text-decoration: none;
+}
+.heading1 {
+  padding-right: 100px;
+  padding-left: 10px;
+  border-left: 2px solid white;
+}
+.heading1 a:hover {
+  color: blue;
+}
+.heading2 {
+  padding-right: 100px;
+  padding-left: 10px;
+  border-left: 2px solid white;
+}
+.heading2 a:hover {
+  color: blue;
+}
+.heading3 {
+  padding-right: 100px;
+  padding-left: 10px;
+  border-left: 2px solid white;
+}
+.heading3 a:hover {
+  color: blue;
+}
+.heading4 {
+  padding-left: 10px;
+  border-left: 2px solid white;
+}
+.heading4 a:hover {
+  color: blue;
+}
+.about {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+  padding: 0px 20px;
+}
+.info {
+  background-color: rgb(190, 93, 24);
+  margin: 10px;
+  padding: 20px;
+}
+.photo {
+  height: 80%;
+  width: 30%;
+  background-image: url(main.jpg);
+  background-size: cover;
+  margin-left: 150px;
+  margin-right: 60px;
+  border: 5px solid black;
+}
+h1 {
+  padding-bottom: 15px;
+}
+
+a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: red;
+}
+a:hover {
+  color: blue;
+}
+.skills {
+  height: 80vh;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+}
+.content1 {
+  background-color: blueviolet;
+  padding-top: 60px;
+  padding-left: 50px;
+  width: 40%;
+  margin-right: 20px;
+}
+.image1 {
+  height: 90%;
+  width: 40%;
+  background-image: url(image1.png);
+  background-size: cover;
+}
+
+.projects {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+}
+
+.content2 {
+  width: 50%;
+  background-color: rgb(33, 191, 202);
+  margin: 10px;
+  padding: 20px;
+  padding-left: 30px;
+  margin-left: 20px;
+}
+.inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+  background-color: aliceblue;
+  padding: 20px;
+}
+.inner a {
+  text-decoration: none;
+  color: red;
+}
+.img2 {
+  height: 550px;
+  width: 600px;
+  background-image: url(image2.png);
+  background-size: cover;
+  margin-left: 20px;
+}
+.resume {
+  height: 80vh;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+}
+
+.img4 {
+  height: 510px;
+  width: 500px;
+  background-image: url(img4.png);
+  background-size: cover;
+  margin-left: 20px;
+}
+.content4 {
+  height: 200px;
+  background-color: rgb(190, 93, 24);
+  padding-top: 60px;
+  padding-left: 50px;
+  width: 50%;
+  margin-left: 60px;
+}
+.content4 a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: white;
+}
+
+.contact {
+  height: 80vh;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+}
+
+.content3 {
+  /* height: 250px; */
+  background-color: rgb(33, 191, 202);
+  /* margin: 10px; */
+  padding-top: 20px;
+  padding-left: 50px;
+  width: 50%;
+  margin-left: 20px;
+}
+.symbols {
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+.symbols a {
+  text-decoration: none;
+  color: red;
+}
+.symbols a :hover {
+  color: blue;
+}
+.img3 {
+  height: 450px;
+  width: 525px;
+  background-image: url(img3.png);
+  background-size: cover;
+  margin-left: 80px;
+}
+footer {
+  height: 8vh;
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Hero section */
+.hero {
+  /* Set the height of the section to 100% of the viewport height */
+  height: 80vh;
+  width: 100vw;
+  /* Set the background color of the section to black */
+  background-color: rgb(202 95 63);
+  /* Set the display of the section to flex */
+  display: flex;
+  /* Align the items of the section to the center */
+  align-items: center;
+}
+
+/* Hero container */
+.hero .container {
+  /* Set the width of the container to 80% of the viewport width */
+  width: 80vw;
+  /* Set the margin of the container to auto */
+  margin: auto;
+  /* Set the display of the container to flex */
+  display: flex;
+  /* Set the flex direction of the container to row */
+  flex-direction: row;
+  /* Set the justify content of the container to space-between */
+  justify-content: space-between;
+}
+
+/* Hero content */
+.hero .hero-content {
+  /* Set the width of the content to 50% of the container width */
+  width: 70%;
+  /* Set the color of the content to white */
+  color: white;
+  padding-top: 5vh;
+}
+
+/* Hero title */
+.hero .hero-title {
+  /* Set the font size of the title to 4rem */
+  font-size: 4rem;
+  /* Set the font weight of the title to bold */
+  font-weight: bold;
+  /* Set the margin bottom of the title to 1rem */
+  margin-bottom: 1rem;
+}
+
+/* Hero subtitle */
+.hero .hero-subtitle {
+  /* Set the font size of the subtitle to 1.5rem */
+  font-size: 1.5rem;
+  /* Set the margin bottom of the subtitle to 2rem */
+  margin-bottom: 2rem;
+}
+
+/* Hero button */
+.hero .hero-button {
+  /* Set the display of the button to inline-block */
+  display: inline-block;
+  /* Set the padding of the button to 1rem 2rem */
+  padding: 1rem 2rem;
+  /* Set the border of the button to none */
+  border: none;
+  text-decoration: none;
+  /* Set the border radius of the button to 0.5rem */
+  border-radius: 0.5rem;
+  /* Set the background color of the button to white */
+  background-color: white;
+  /* Set the color of the button to black */
+  color: black;
+  /* Set the font size of the button to 1.2rem */
+  font-size: 1.2rem;
+  /* Set the cursor of the button to pointer */
+  cursor: pointer;
+  /* Set the transition of the button to 0.3s */
+  transition: 0.3s;
+}
+
+/* Hero button hover effect */
+.hero .hero-button:hover {
+  /* Set the background color of the button to lightgray */
+  background-color: lightgray;
+}
+
+/* Hero image */
+.hero .hero-image {
+  /* Set the width of the image to 40% of the container width */
+  width: 50%;
+}
+
+/* Hero image source */
+.hero .hero-image img {
+  /* Set the width of the image source to 100% of the image width */
+  width: auto;
+  border-radius: 50%;
+  /* Set the height of the image source to auto */
+  height: 60vh;
+  /* Set the object fit of the image source to cover */
+  object-fit: cover;
+  animation: floating 4s ease-in-out infinite;
+}
+header span {
+  color: white;
+  display: none;
+  align-items: center;
+  font-size: 1.7rem;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .heading {
+    display: none;
+  }
+
+  .menu {
+    color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10vw;
+    font-size: 1.7rem;
+  }
+  p,
+  li {
+    font-size: 0.7rem;
+  }
+  footer p {
+    font-size: 0.7rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .abo,
+  .edu,
+  .exp,
+  .hob {
+    font-size: 1.2rem;
+  }
+  .hero .container {
+    /* Set the width of the container to 80% of the viewport width */
+    width: 90vw;
+    /* Set the margin of the container to auto */
+    margin-top: 10vh;
+    /* Set the display of the container to flex */
+    display: flex;
+    /* Set the flex direction of the container to row */
+    flex-direction: row;
+    /* Set the justify content of the container to space-between */
+    justify-content: space-between;
+  }
+  .hero .hero-title {
+    /* Set the font size of the title to 4rem */
+    font-size: 3rem;
+    /* Set the font weight of the title to bold */
+    font-weight: bold;
+    /* Set the margin bottom of the title to 1rem */
+    margin-bottom: 1rem;
+  }
+
+  /* Hero subtitle */
+  .hero .hero-subtitle {
+    /* Set the font size of the subtitle to 1.5rem */
+    font-size: 1.2rem;
+    /* Set the margin bottom of the subtitle to 2rem */
+    margin-bottom: 1.5rem;
+  }
+
+  /* Hero button */
+  .hero .hero-button {
+    /* Set the display of the button to inline-block */
+    display: inline-block;
+    /* Set the padding of the button to 1rem 2rem */
+    /* padding: 1rem 2rem; */
+    /* Set the border of the button to none */
+    border: none;
+    /* Set the border radius of the button to 0.5rem */
+    border-radius: 0.5rem;
+    /* Set the background color of the button to white */
+    background-color: white;
+    /* Set the color of the button to black */
+    color: black;
+    /* Set the font size of the button to 1.2rem */
+    font-size: 0.8rem;
+    /* Set the cursor of the button to pointer */
+    cursor: pointer;
+    /* Set the transition of the button to 0.3s */
+    transition: 0.3s;
+  }
+  .hero .hero-content {
+    /* Set the width of the content to 50% of the container width */
+    width: 50%;
+    /* Set the color of the content to white */
+    color: white;
+    padding-top: 5vh;
+  }
+  .hero .hero-image img {
+    /* Set the width of the image source to 100% of the image width */
+    width: 100%;
+    /* Set the height of the image source to auto */
+    height: 60vh;
+    /* Set the object fit of the image source to cover */
+    object-fit: contain;
+    animation: floating 3s ease-in-out infinite;
+  }
+  .info {
+    height: 85%;
+    background-color: rgb(190, 93, 24);
+    margin: 10px;
+    /* padding: 20px; */
+    padding-left: 30px;
+    line-height: normal;
+  }
+  .inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+    background-color: aliceblue;
+    padding: 10px;
+  }
+  .photo {
+    display: none;
+  }
+  .skills {
+    height: 80vh;
+    padding: 0px 20px;
+    padding-top: 7vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+  }
+  .content1 {
+    height: 40%;
+    background-color: blueviolet;
+    padding: 20px;
+    padding-left: 50px;
+    width: 80%;
+    margin-bottom: 5vh;
+  }
+
+  .image1 {
+    height: 50%;
+    width: 100%;
+    background-image: url(image1.png);
+    background-size: cover;
+  }
+  .img2 {
+    height: 550px;
+    width: 50%;
+    background-image: url(image2.png);
+    background-size: auto;
+    margin-left: 20px;
+  }
+  .content2 {
+    width: 70%;
+    height: auto;
+    background-color: rgb(33, 191, 202);
+    margin: 10px;
+    padding: 20px;
+    padding-left: 30px;
+    margin-left: 20px;
+  }
+  .contact {
+    height: 80vh;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    background-color: bisque;
+  }
+  .content3 {
+    height: 335px;
+    background-color: rgb(33, 191, 202);
+    margin: 10px;
+    /* padding-top: 30px; */
+    padding-left: 50px;
+    width: 95%;
+  }
+  .img3 {
+    display: none;
+  }
+  .btn-group button {
+    background-color: #000;
+  }
+}
